@@ -4,7 +4,12 @@ import Button from 'react-bootstrap/Button';
 function AddTask({ addTask }) {
   const [value, setValue] = useState("");
 
+
   const addItem = () => {
+    if(!value){
+      alert("add an item")
+      return;
+    }
     addTask(value);
     setValue("");
   };

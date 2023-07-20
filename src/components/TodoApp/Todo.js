@@ -28,7 +28,7 @@ function Todo() {
       <div>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">TODO APP</Navbar.Brand>
+          <Navbar.Brand href="#home" style={{color:"yellow"}}>TODO APP</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#tasks">Tasks</Nav.Link>
