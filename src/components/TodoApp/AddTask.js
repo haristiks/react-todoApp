@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from 'react-bootstrap/Button';
 
 function AddTask({ addTask }) {
   const [value, setValue] = useState("");
@@ -19,9 +20,9 @@ function AddTask({ addTask }) {
             setValue(e.target.value);
           }}
         />
-        <button onClick={addItem} className="add-btn">
+        <Button onClick={addItem} className="add-btn btn-lg" variant="primary">
           ADD
-        </button>
+        </Button>
       </div>
     </>
   );
