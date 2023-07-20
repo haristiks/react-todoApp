@@ -1,20 +1,18 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 
 function ListTask({ task, index, removeTask }) {
   return (
     <>
       <div className="list-tasks">
         {task.title}
-        <Button
+        <button
           onClick={() => {
             removeTask(index);
           }}
-          className="delete-btn btn-lg"
-          variant="danger"
+          className="delete-btn bg-danger "
         >
           Delete
-        </Button>
+        </button>
       </div>
     </>
   );
